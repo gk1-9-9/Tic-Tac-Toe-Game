@@ -3,6 +3,23 @@ import Link from "next/link"
 export default function About() {
   return (
     <main className="flex min-h-screen flex-col items-center p-4 bg-gradient-to-b from-zinc-800 to-zinc-900">
+       <div className="absolute inset-0 bg-zinc-900">
+        {/* Base gradient */}
+        <div className="absolute inset-0 bg-gradient-to-b from-zinc-800 to-zinc-900"></div>
+        
+        {/* Animated subtle glow elements */}
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-purple-600/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-1/3 w-64 h-64 bg-indigo-600/10 rounded-full blur-3xl"></div>
+        
+        {/* Dot pattern overlay - using CSS gradients instead of images */}
+        <div className="absolute inset-0 opacity-5"
+             style={{
+               backgroundImage: `radial-gradient(#fff 1px, transparent 1px)`,
+               backgroundSize: `30px 30px`
+             }}>
+        </div>
+      </div>
       <div className="relative z-10 w-full flex flex-col items-center">
         <h1 className="text-4xl font-bold text-white mt-6 mb-8 tracking-tight">
           <span className="text-zinc-100">Tic</span>
