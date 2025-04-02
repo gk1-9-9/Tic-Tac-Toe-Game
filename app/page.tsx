@@ -1,5 +1,7 @@
-import Link from "next/link"
-import TicTacToe from "@/components/tic-tac-toe"
+// app/page.tsx
+import Link from "next/link";
+import TicTacToe from "@/components/tic-tac-toe";
+import GameLoader from "@/components/GameLoader";
 
 export default function Home() {
   return (
@@ -54,8 +56,11 @@ export default function Home() {
             </Link>
           </div>
         </nav>
-        <TicTacToe />
+        
+        <GameLoader>
+          <TicTacToe />
+        </GameLoader>
       </div>
     </main>
-  )
+  );
 }
