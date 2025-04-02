@@ -3,8 +3,10 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Tic-Tac-Toe',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  description: 'Simple Tic-Tac-Toe game built with Next.js and React',
+  icons: {
+    icon: '/download.jpeg',
+  },
 }
 
 export default function RootLayout({
@@ -14,6 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+      <link rel="icon" href="/download.jpeg" type="image/jpg" />
+
+      </head>
       <body>{children}</body>
     </html>
   )
