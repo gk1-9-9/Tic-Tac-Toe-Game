@@ -1,9 +1,10 @@
-# 🎮 Tic-Tac-Toe Game  
+# Tic-Tac-Toe Game  
 
 A modern implementation of the classic Tic-Tac-Toe game built with **Next.js** and **React**. This project features a sleek dark-themed UI, responsive design, and an intuitive game interface.  
 
 ## 🚀 Features  
-- ✅ **Classic Tic-Tac-Toe gameplay** – Play against a friend in a turn-based game.  
+- ✅ **Classic Tic-Tac-Toe gameplay** – Play against a friend in a turn-based game. 
+- 🤖 **Play with Computer** – Challenge an AI opponent.
 - 🌙 **Dark-themed UI** – A sleek, modern design with a minimalist aesthetic.  
 - 📱 **Fully responsive** – Works seamlessly on all screen sizes.  
 - ⚡ **Optimized performance** – Built with Next.js for fast loading times.  
@@ -28,6 +29,16 @@ Clone the repository and navigate into the project folder:
 
 ```bash
 git clone https://github.com/yourusername/tic-tac-toe.git
-cd tic-tac-toe
+cd tic-tac-toe 
+```
+
+# Install dependencies:
+```bash
 pnpm install
+```
+#Start the development server with:
+```bash
 pnpm dev
+```
+
+Then, open http://localhost:3000 in your browser to play the game.
